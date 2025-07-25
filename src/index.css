@@ -138,14 +138,10 @@ h1 {
 }
  /**css pageSign up**/
 
- /* ตัวอย่าง CSS สำหรับฟอร์ม Signup */
-
-/* กล่องของแต่ละ input */
 .textbox {
   margin-bottom: 1.2rem;
 }
 
-/* input ทั่วไป */
 .textbox input {
   width: 100%;
   padding: 0.75rem 1rem;
@@ -158,13 +154,12 @@ h1 {
   box-sizing: border-box;
 }
 
-/* เมื่อคลิกหรือกรอก */
+
 .textbox input:focus {
   border-color: #007bff;
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
 }
 
-/* ปุ่มสมัคร */
 button[type="submit"] {
   background-color: #007bff;
   color: white;
@@ -176,7 +171,6 @@ button[type="submit"] {
   transition: background-color 0.3s;
 }
 
-/* เมื่อเอาเมาส์ไปวางบนปุ่ม */
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
@@ -194,7 +188,6 @@ html, body {
   min-height: 100vh;
 }
 
-/* ชั้นสอง: กล่องขาวแบบ card */
 .form-wrapper {
   background-color: white;
   padding: 2rem 2.5rem;
