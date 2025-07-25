@@ -24,117 +24,98 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 50px;
-  line-height: 1.1;
-  
-}
-
-.button1 {
+  padding: 0;
+  height: 100%;
   width: 100%;
-  max-width: 300px;
-  border-radius: 25px;
-  border: 1px solid #1b1e57; /* ขอบมองเห็นได้ */
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #153871; /* สีฟ้าถาวร */
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.25s, border-color 0.25s;
+  overflow: hidden;
+  font-family: 'Prompt', sans-serif;
 }
-
-.button1:hover {
-  background-color: #081e43; /* สีฟ้าเข้มเมื่อชี้ */
-  border-color: #1b1e57;
-}
-
-.styled-input {
-  width: 100%;
-  max-width: 500px;
-  padding: 12px 16px;
-  border: 1px solid #ccc;
-  border-radius: 25px;
-  outline: none;
-  font-size: 16px;
-  background-color: #f9f9f9;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  box-sizing: border-box;
-}
-
-.styled-input:focus {
-  border-color: #4a90e2;
-  box-shadow: 0 0 8px rgba(74, 144, 226, 0.4);
-  background-color: white;
-}
-.word {
-  font-weight: 300;
-  font-size: 50px;
-  padding: 10px 20px;
-}
-.word1 {
-  font-weight: 300;
-  font-size: 25px;
-  padding: 10px 20px;
-}
-.my-button {
-  width: 100%;
-  max-width: 500px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-radius: 50px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  background-color: #f9f9f9;
-  color: rgb(33, 32, 32);
-  border-radius: 25px;
-  border-color: #000000;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.my-button:hover {
-  border-color: #000000;
-  background-color: #ffffff;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.google-icon {
-  width: 20px;
-  height: 20px;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 .container {
   display: flex;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
-.left-side {
-  flex: 1;
-  background-color: white;
-  padding: 40px;
+.left-side, .right-side {
+  flex: 1 1 50%;
+  min-width: 0;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 50px; 
+  align-items: center;
+}
+
+.left-side {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 40px;
+}
+.icons {
+  max-width: 90%;
+  height: auto;
+  margin-top: 20px;
 }
 
 .right-side {
-  flex: 2;
   background-color: #7790f6;
+  padding: 40px;
+}
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.styled-input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  background-color: white;
+}
+.button1 {
+  width: 100%;
+  border-radius: 25px;
+  padding: 12px;
+  background-color: #153871;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin: 10px 0;
+}
+.button1:hover {
+  background-color: #0d2550;
+}
+
+.my-button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  background-color: white;
+  border: 1px solid #ccc;
   display: flex;
-  justify-content: center; 
   align-items: center;
-  padding-right: 60px; 
+  justify-content: center;
+  gap: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.google-icon {
+  width: 20px;
+  height: 20px;
+}
+.word {
+  margin: 15px  50px;
+  font-size: 50px;
+  color: #000000;
 }
  /**css pageSign up**/
 
