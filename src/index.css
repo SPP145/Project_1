@@ -62,13 +62,18 @@ body {
 }
 
 .right-side {
-  background-color: #7790f6;
+  background-color: #93c5fd,#bfdbfe;
   padding: 40px;
+  text-align: center;
 }
 .login-form {
   width: 100%;
   max-width: 400px;
+  margin: 0 auto;
   text-align: center;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
 }
 
 .styled-input {
@@ -82,14 +87,16 @@ body {
 }
 .button1 {
   width: 100%;
+  max-width: 260px; 
   border-radius: 25px;
   padding: 12px;
-  background-color: #153871;
+  background-color: #133469;
   color: white;
   font-weight: bold;
   cursor: pointer;
   border: none;
-  margin: 10px 0;
+  margin: 10px auto;
+  text-align: center;
 }
 .button1:hover {
   background-color: #0d2550;
@@ -117,7 +124,13 @@ body {
   font-size: 50px;
   color: #000000;
 }
- /**css pageSign up**/
+.w1 {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+ /***********************************css pageSign up*****************************************/
 
 .textbox {
   margin-bottom: 1.2rem;
@@ -159,7 +172,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg,  #daf7fe,#7fbbff, #91c6fc, #fbfcfd); /* เพิ่มตรงนี้ */
+  background: linear-gradient(135deg,  #93c5fd,#dbeafe, #f3e8ff, #fef3c7) /* เพิ่มตรงนี้ */
 }
 
 .background-layer {
@@ -168,7 +181,6 @@ html, body {
   align-items: center;
   min-height: 100vh;
 }
-
 .form-wrapper {
   background-color: white;
   padding: 2rem 2.5rem;
